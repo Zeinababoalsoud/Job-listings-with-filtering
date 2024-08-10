@@ -1,0 +1,15 @@
+#jobswrapper{
+    display: flex;
+    flex-direction: column;
+    width:60%;
+    flex-grow: 1;
+    height:90%;
+    padding:30px;
+    box-sizing: border-box;
+    row-gap: 25px;
+}
+@media only screen and (max-width: 800px) {
+    #jobswrapper{
+        width:80%;
+    }
+  }

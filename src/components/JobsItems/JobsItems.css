@@ -1,0 +1,126 @@
+#jobItem{
+    width:100%;
+    height:100px;
+    display:flex;
+    background-color: white;
+    align-items: center;
+    padding:20px 10px;
+    box-sizing: border-box;
+    border-radius: 0px 10px 10px 0px ;
+    justify-content: space-between;
+    box-shadow: 45px 82px 119px -28px #e8e7e7;
+}
+.rightDiv{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.rightDiv img{
+    width:60px;
+    height:60px;
+}
+.jobsContent{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text{
+    display:flex;
+    column-gap: 15px;
+    row-gap: 15px;
+    color:#a49c9c;
+    
+}
+.ul{
+    padding:0;
+    display:flex;
+    column-gap: 20px;
+    margin: 0;
+}
+.list{
+    list-style: none;
+}
+.leftDiv{
+    display:flex;
+    column-gap: 15px;
+}
+.leftDiv button{
+    border:none;
+    padding:7px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-weight: 600;
+    color:hsl(180, 29%, 50%);
+    background-color:  hsl(180, 52%, 96%);
+}
+p{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-weight: 700;
+}
+.lab1{
+    color:hsl(180, 29%, 50%);
+    font-weight: 700;
+}
+.lab2,.lab3{
+    background-color:hsl(180, 29%, 50%);
+    color:white;
+    width:50px;
+    text-align: center;
+    border-radius: 10px;
+    padding:3px;
+    box-sizing: border-box;
+}
+.lab3{
+    background-color: black;
+    width: 80px;
+
+}
+button:hover{
+    cursor:pointer;
+}
+hr{
+    width:100%;
+    height:2px;
+    background-color: #bebaba;
+    display:none;
+    color:#bebaba;
+}
+@media only screen and (max-width: 800px) {
+    #jobItem{
+        flex-direction: column;
+        align-items: start;
+        height:220px;
+        row-gap: 15px;
+
+
+    }
+    .rightDiv{
+        flex-direction: column;
+        align-items: start;
+        column-gap:0;
+        row-gap: 10px;
+        width:100%;
+        position: relative;
+    }
+    .rightDiv img{
+        width:40px;
+        height:40px;
+        position: absolute;
+        top:-40px;
+        left:0;
+    }
+    .leftDiv{
+        display:flex;
+        column-gap: 15px;
+    }
+    hr{
+        display:flex;
+        margin: 0;
+        padding: 0;
+    }
+  }
